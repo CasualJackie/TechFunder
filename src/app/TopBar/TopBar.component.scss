@@ -1,0 +1,17 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  color: #8C8C8C;
+  background-color: #F5F5F5;
+
+  &__button {
+    width: 25px;
+    height: 25px;
+
+    background-image: url('../../assets/trash.png');
+    background-size: contain;
+    border: none;
+  }
+}

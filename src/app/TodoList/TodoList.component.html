@@ -1,0 +1,19 @@
+<ul class="todos">
+  <li
+    *ngFor="let todo of todos"
+    (click)="todo.completed = !todo.completed"
+    [class]="todo.completed
+      ? 'todos__item todos__item--completed'
+      : 'todos__item'
+    "
+  >
+    <img
+      class="todos__image"
+      [src]="todo.completed
+        ? '../../assets/checked.png'
+        : '../../assets/not_checked.png'
+      "
+    >
+    {{ todo.value }}
+  </li> 
+</ul>

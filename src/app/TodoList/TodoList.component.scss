@@ -1,0 +1,14 @@
+.todos {
+  &__image {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__item {
+    list-style-type: none;
+
+    &--completed {
+      font-style: italic;
+    }
+  }
+}

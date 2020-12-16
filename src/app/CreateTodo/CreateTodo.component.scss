@@ -1,0 +1,25 @@
+.bottombar {
+  padding-top: 50px;
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    height: 25px;
+  }
+
+  &__button {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+
+    background-color: #FFFFFF;
+    background-image: url(../../assets/plus.png);
+    background-size: contain;
+    border: none;
+  }
+
+  &__error {
+    color: #E25544;
+  }
+}

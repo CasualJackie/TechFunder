@@ -1,0 +1,31 @@
+<div class="bottombar">
+  <div class="bottombar__form">
+    <button
+      type="submit"
+      class="bottombar__button"
+      (click)="addTodo($event)"
+    >
+    </button>
+
+    <form
+      class="input-group input-group-sm mb-3"
+      (submit)="addTodo($event)"
+    >
+      <label class="form-label">
+        <input
+          [class]="inputError
+            ? 'bottombar__input form-control is-invalid'
+            : 'bottombar__input form-control'
+          "
+          type="text"
+          (input)="inputHandler($event)"
+          [value]="todo"
+        >
+      </label>
+    </form>
+  </div>
+
+  <div class="bottombar__error" [hidden]="!inputError">
+    The text must be more than three characters!
+  </div>
+</div>
