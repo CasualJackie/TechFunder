@@ -8,6 +8,7 @@ import { Input, Component } from '@angular/core';
 
 export class CreateTodo {
   @Input() todos;
+
   todo = '';
   inputError = false;
 

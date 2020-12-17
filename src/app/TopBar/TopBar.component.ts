@@ -1,4 +1,4 @@
-import { Input, Component } from '@angular/core';
+import { Output, EventEmitter, Component } from '@angular/core';
 
 @Component({
   selector: 'app-topBar',
@@ -7,10 +7,9 @@ import { Input, Component } from '@angular/core';
 })
 
 export class TopBar {
-  @Input() todos;
+  @Output() clearTodosEvent = new EventEmitter<any>();
 
-  clearTodos() {
-    const filteredTodos = this.todos.filter(todo => (!todo.completed));
-    this.todos = [...filteredTodos];
-  };
+  emptyTrash() {
+    this.clearTodosEvent.emit();
+  }
 }

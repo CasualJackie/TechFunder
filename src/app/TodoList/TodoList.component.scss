@@ -6,6 +6,7 @@
 
   &__item {
     list-style-type: none;
+    cursor: pointer;
 
     &--completed {
       font-style: italic;

@@ -1,5 +1,5 @@
 <div class="container">
-  <app-topBar [todos]="todos"></app-topBar>
+  <app-topBar (clearTodosEvent)="clearTodos()"></app-topBar>
 
   <app-todoList [todos]="todos"></app-todoList>
 

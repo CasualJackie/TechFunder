@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   todos = [];
+
+  clearTodos() {
+    this.todos = this.todos.filter(todo => (!todo.completed));
+  };
 }
