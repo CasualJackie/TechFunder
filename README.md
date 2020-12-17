@@ -5,6 +5,12 @@
 3. Click on a task to change its status
 4. Click on the trash can to delete completed tasks
 
+### Stack
+* Angular
+* HTML
+* SCSS
+* bootstrap
+
 ### Dependencies
 * Node v14.8.0 and higher
 * NPM 6.14.8 and higher
