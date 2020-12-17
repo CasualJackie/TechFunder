@@ -9,6 +9,10 @@ export class AppComponent {
   todos = [];
 
   clearTodos() {
-    this.todos = this.todos.filter(todo => (!todo.completed));
+    this.todos = this.todos.filter(todo => (!todo.checked));
+  };
+
+  addTodos(todo) {
+    this.todos = [...this.todos, todo];
   };
 }

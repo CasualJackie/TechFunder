@@ -1,4 +1,4 @@
-import { Input, Component } from '@angular/core';
+import { Output, EventEmitter, Component } from '@angular/core';
 
 @Component({
   selector: 'app-createTodo',
@@ -7,7 +7,7 @@ import { Input, Component } from '@angular/core';
 })
 
 export class CreateTodo {
-  @Input() todos;
+  @Output() addTodosEvent = new EventEmitter<any>();
 
   todo = '';
   inputError = false;
@@ -30,7 +30,7 @@ export class CreateTodo {
 
     this.inputError = false;
 
-    this.todos.push({
+    this.addTodosEvent.emit({
       value: this.todo,
       checked: false,
     });

@@ -1,27 +1,32 @@
-# TechFunder
+# StarNavi test task
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+1. Click [here](https://casualjackie.github.io/TechFunder/) for open project
+2. Write something and click "+"/Enter
+3. Click on a task to change its status
+4. Click on the trash can to delete completed tasks
 
-## Development server
+### Dependencies
+* Node v14.8.0 and higher
+* NPM 6.14.8 and higher
+* angular/animations 11.0.4 and higher
+* angular/common 11.0.4 and higher
+* angular/compiler 11.0.4 and higher
+* angular/core 11.0.4 and higher
+* angular/forms 11.0.4 and higher
+* angular/platform-browser 11.0.4 and higher
+* angular/platform-browser-dynamic 11.0.4 and higher
+* angular/router 11.0.4 and higher
+* rxjs 6.6.0 and higher
+* tslib 2.0.0 and higher
+* zone.js 0.10.2 and higher
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Installing
+* Fork and clone this repository
+* Run `npm install` in your terminal
+* Run `npm start`
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Troubleshooting
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Any advise for common problems or issues.
+For any contributing or problem solving you could find me [here](https://www.linkedin.com/in/evgeniy-polishchuk-6424111bb/) and [here](mailto:evhenii.polishchuk@gmail.com)

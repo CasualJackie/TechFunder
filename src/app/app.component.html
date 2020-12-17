@@ -3,5 +3,5 @@
 
   <app-todoList [todos]="todos"></app-todoList>
 
-  <app-createTodo [todos]="todos"></app-createTodo>
+  <app-createTodo (addTodosEvent)="addTodos($event)"></app-createTodo>
 </div>

@@ -8,4 +8,14 @@ import { Input, Component } from '@angular/core';
 
 export class TodoList {
   @Input() todos;
+
+  loadImage(todo) {
+    return todo.checked
+      ? './assets/checked.png'
+      : './assets/not_checked.png'
+  };
+
+  todoStatus(todo) {
+    return todo.checked = !todo.checked;
+  };
 }
