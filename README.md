@@ -1,4 +1,4 @@
-# StarNavi test task
+# TechFunder test task
 
 1. Click [here](https://casualjackie.github.io/TechFunder/) for open project
 2. Write something and click "+"/Enter
