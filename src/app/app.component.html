@@ -1,7 +1,7 @@
 <div class="container">
-  <app-topBar (clearTodosEvent)="clearTodos()"></app-topBar>
+  <app-top-bar (clearTodosEvent)="clearTodos()"></app-top-bar>
 
-  <app-todoList [todos]="todos"></app-todoList>
+  <app-todo-list [todos]="todos"></app-todo-list>
 
-  <app-createTodo (addTodosEvent)="addTodos($event)"></app-createTodo>
+  <app-create-todo (addTodosEvent)="addTodos($event)"></app-create-todo>
 </div>

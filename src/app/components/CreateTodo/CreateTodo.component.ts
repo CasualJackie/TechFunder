@@ -1,27 +1,28 @@
 import { Output, EventEmitter, Component } from '@angular/core';
+import { Todo } from '../../models/Todo';
 
 @Component({
-  selector: 'app-createTodo',
+  selector: 'app-create-todo',
   templateUrl: './CreateTodo.component.html',
   styleUrls: ['./CreateTodo.component.scss']
 })
 
 export class CreateTodo {
-  @Output() addTodosEvent = new EventEmitter<any>();
+  @Output() addTodosEvent = new EventEmitter<Todo>();
 
-  todo = '';
-  inputError = false;
+  todo:string = '';
+  inputError:boolean = false;
 
-  inputHandler(event: any) {
+  inputHandler(event: { target: { value: string; }; }):void {
     const { value } = event.target;
     this.todo = value;
     this.inputError = false;
   };
 
-  addTodo(event: any) {
+  addTodo(event: { preventDefault: () => void; }):void {
     event.preventDefault();
 
-    const validationTodo = this.todo.replace(/\s/g, '');
+    const validationTodo:string = this.todo.replace(/\s/g, '');
 
     if (validationTodo.length <= 3) {
       this.inputError = true;

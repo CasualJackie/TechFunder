@@ -6,7 +6,7 @@
 4. Click on the trash can to delete completed tasks
 
 ### Stack
-* Angular
+* Angular 11
 * HTML
 * SCSS
 * bootstrap
@@ -14,18 +14,8 @@
 ### Dependencies
 * Node v14.8.0 and higher
 * NPM 6.14.8 and higher
-* angular/animations 11.0.4 and higher
-* angular/common 11.0.4 and higher
-* angular/compiler 11.0.4 and higher
 * angular/core 11.0.4 and higher
-* angular/forms 11.0.4 and higher
-* angular/platform-browser 11.0.4 and higher
-* angular/platform-browser-dynamic 11.0.4 and higher
-* angular/router 11.0.4 and higher
-* rxjs 6.6.0 and higher
-* tslib 2.0.0 and higher
-* zone.js 0.10.2 and higher
-
+* angular/compiler 11.0.4 and higher
 
 ### Installing
 * Fork and clone this repository
